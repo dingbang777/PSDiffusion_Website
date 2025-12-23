@@ -3,12 +3,12 @@
 <html lang="en">
 
 <head>
-  <meta content="HSMR" name="title" />
-  <meta content="This paper recoveries biomechanically accurate human pose." name="description" />
+  <meta content="PSDiffusion" name="title" />
+  <meta content="Harmonized Multi-Layer Image Generation via Layout and Appearance Alignment" name="description" />
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
   <meta content="English" name="language" />
-  <meta content="Yan Xia" name="author" />
-  <title>HSMR - Human Skeleton and Mesh Recovery</title>
+  <parameter name="author" />
+  <title>PSDiffusion: Harmonized Multi-Layer Image Generation via Layout and Appearance Alignment</title>
   <!-- Bootstrap -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap-4.4.1.js"></script>
@@ -42,23 +42,35 @@
           <div class="col-12">
             <h1 style="font-weight: bold">
               <b>
-                Reconstructing <span style="color: #98BACB">Humans</span> with a <br>
-                <span style="color: #CAB6A5">Biomechanically</span> Accurate Skeleton
+                PSDiffusion: Harmonized Multi-Layer Image Generation via<br>
+                Layout and Appearance Alignment
               </b>
             </h1>
-            <h4 style="color:#5a6268;">CVPR 2025 (Oral)</h4>
+            <h4 style="color:#5a6268;">WACV 2026</h4>
             <hr>
-            <a href="https://scholar.isshikih.top">Yan Xia</a><sup>2,1</sup>&nbsp;
-            <a href="https://xzhou.me">Xiaowei Zhou</a><sup>2</sup>&nbsp;
-            <a href="https://www.cs.utexas.edu/~evouga/">Etienne Vouga</a><sup>1</sup>&nbsp;
-            <a href="https://www.cs.utexas.edu/~huangqx/">Qixing Huang</a><sup>1</sup>&nbsp;
-            <a href="https://geopavlakos.github.io/">Georgios Pavlakos</a><sup>1</sup>
-            <p><sup>1</sup>The University of Texas at Austin&nbsp;&nbsp;&nbsp;<sup>2</sup>Zhejiang University</p>
+            <a href="https://dingbang777.github.io/">Dingbang Huang</a><sup>1</sup>&nbsp;
+            <a href="https://dingbang777.github.io/">Wenbo Li</a><sup>1</sup>&nbsp;
+            <a href="https://zhao0278.github.io/">Yifei Zhao</a><sup>1</sup>&nbsp;
+            <a href="https://scholar.google.com/citations?user=HxS8Bx0AAAAJ&hl=en">Xinyu Pan</a><sup>2</sup>&nbsp;
+            <a href="https://github.com/Thorin215/Thorin215">Chun Wang</a><sup>3</sup>&nbsp;
+            <a href="https://zengyh1900.github.io/">Yanhong Zeng</a><sup>4</sup>&nbsp;
+            <a href="https://scholar.google.com/citations?user=KNWTvgEAAAAJ&hl=en">Bo Dai</a><sup>5</sup>
+            <p><sup>1</sup>Shanghai Jiao Tong University&nbsp;&nbsp;&nbsp;<sup>2</sup>The Chinese University of Hong Kong&nbsp;&nbsp;&nbsp;
+              <br><sup>3</sup>Zhejiang University&nbsp;&nbsp;&nbsp;<sup>4</sup>Shanghai AI Laboratory&nbsp;&nbsp;&nbsp;<sup>5</sup>The University of Hong Kong</p>
             <div class="row justify-content-center">
 
               <div class="column">
                 <p class="mb-5">
-                  <a class="btn btn-large btn-light" href="https://arxiv.org/abs/2503.21751" role="button">
+                  <a class="btn btn-large btn-light" href="https://arxiv.org/abs/2505.11468" role="button">
+                    <i class="fas fa-file-pdf"></i>
+                    <b>Arixv</b>
+                  </a>
+                </p>
+              </div>
+
+              <div class="column">
+                <p class="mb-5">
+                  <a class="btn btn-large btn-light" href="https://arxiv.org/pdf/2505.11468" role="button">
                     <i class="fas fa-file-pdf"></i>
                     <b>Paper</b>
                   </a>
@@ -67,7 +79,7 @@
 
               <div class="column">
                 <p class="mb-5">
-                  <a class="btn btn-large btn-light" href="https://www.cs.utexas.edu/~pavlakos/hsmr/resources/hsmr_suppmat.pdf" role="button">
+                  <a class="btn btn-large btn-light" href="assets/Supplement_PSDiffusion.pdf" role="button">
                     <i class="fas fa-file-pdf"></i>
                     <b>SupMat</b>
                   </a>
@@ -78,7 +90,7 @@
                 <p class="mb-5">
                   <a class="btn btn-large btn-light" href="https://github.com/IsshikiHugh/HSMR" role="button">
                     <i class="fas fa-code"></i>
-                    <b>Code</b>
+                    <b>Code (Coing Soon)</b>
                   </a>
                 </p>
               </div>
@@ -87,19 +99,19 @@
                 <p class="mb-5">
                   <a class="btn btn-large btn-light" href="https://huggingface.co/spaces/IsshikiHugh/HSMR" role="button">
                     <i class="fa fa-gamepad"></i>
-                    <b>HuggingFace</b>
+                    <b>Dataset (Coming Soon)</b>
                   </a>
                 </p>
               </div>
 
-              <div class="column">
+              <!-- <div class="column">
                 <p class="mb-5">
                   <a class="btn btn-large btn-light" href="https://colab.research.google.com/drive/1RDA9iKckCDKh_bbaKjO8bQ0-Lv5fw1CB?usp=sharing" role="button">
                     <i class="fa fa-play"></i>
                     <b>Colab</b>
                   </a>
                 </p>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -107,7 +119,7 @@
     </div>
   </section>
 
-
+<!-- 
   <section>
     <div class="container">
       <div class="row">
@@ -126,7 +138,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section>
     <div class="container">
@@ -136,13 +148,10 @@
           <hr style="margin-top: 0px" />
 
           <p class="text-left">
-            (1) We present HSMR (<span style="color: #7e7e7e"><strong>H</strong>uman <span style="color: #b7a493"><strong>S</strong>keleton</span> and <span style="color: #85a6b7"><strong>M</strong>esh</span> <strong>R</strong>ecovery</span>), the first end-to-end approach to recover SKEL parameters from single image. <br/>
-            (2) We show how to create a dataset with pseudo ground truth to train a model for other human body models. <br/>
-            (3) We demonstrate that HSMR shows robustness in extreme poses and viewpoints, providing biomechanically accurate human pose estimation, while still matches the performance of the most closely related state-of-the-art method that regresses SMPL parameters.  <br/>
-            (4) We reveal the limitations of previous methods regressing SMPL parameters, and show how they tend to predict unnatural rotations for the body joints, leading to biomechanically inaccurate results.
+        We present PSDiffusion, an end-to-end diffusion framework for simultaneous multi-layer image generation. Leveraging a global-layer interactive mechanism, our model generates layered images concurrently and collaboratively, ensuring not only high quality and completeness for each layer, but also spatial and visual interactions among layers for global coherence.
           </p>
 
-          <div id="TeaserVideos"></div>
+          <div id="TeaserImages"></div>
           <br>
 
         </div>
@@ -158,24 +167,24 @@
 
           <h3>Abstract</h3>
           <hr style="margin-top: 0px" />
-
-          <img src="assets/teaser_v2.png" width="100%" />
-
           <p class="text-left">
-            In this paper, we introduce a method for reconstructing humans in 3D from a single image using a biomechanically accurate skeleton model.
-            To achieve this, we train a transformer that takes an image as input and estimates the parameters of the model.
-            Due to the lack of training data for this task, we build a pipeline to generate pseudo ground truth data and implement a training procedure that iteratively refines these pseudo labels for improved accuracy.
-            Compared to state-of-the-art methods in 3D human pose estimation, our model achieves competitive performance on standard benchmarks, while it significantly outperforms them in settings with extreme 3D poses and viewpoints.
-            This result highlights the benefits of using a biomechanical skeleton with realistic degrees of freedom for robust pose estimation.
-            Additionally, we show that previous models frequently violate joint angle limits, leading to unnatural rotations.
-            In contrast, our approach leverages the biomechanically plausible degrees of freedom leading to more realistic joint rotation estimates.
-            We validate our approach across multiple human pose estimation benchmarks. <br>
+          Transparent image layer generation plays a significant role in digital art and design workflows. Existing methods typically decompose transparent layers from a single RGB image using a set of tools or generate multiple transparent layers sequentially. Despite some promising results, these methods often limit their ability to model global layout, physically plausible interactions, and visual effects such as shadows and reflections with high alpha quality due to limited shared global context among layers. 
+          To address this issue, we propose <strong>PSDiffusion</strong>, a unified diffusion framework that leverages image composition priors from pre-trained image diffusion model for simultaneous multi-layer text-to-image generation. Specifically, our method introduces a global layer interaction mechanism to generate layered images collaboratively, ensuring both individual layer quality and coherent spatial and visual relationships across layers. 
+          We include extensive experiments on benchmark datasets to demonstrate that PSDiffusion is able to outperform existing methods in generating multi-layer images with plausible structure and enhanced visual fidelity. <br>
           </p>
+
+          <div style="text-align: center;">
+            <img src="assets/teaser_00.png" width="85%" />
+          </div>
+          <br>
+
 
         </div>
       </div>
     </div>
   </section>
+
+
 
   <!-- Methods -->
   <section>
@@ -186,17 +195,19 @@
           <h3>Method</h3>
           <hr style="margin-top: 0px" />
           <div style="display: flex; justify-content: center;">
-            <img src="assets/HSMR-pipeline_v3.png" width="100%" />
+            <img src="assets/pipeline_00.png" width="90%" />
           </div>
 
           <p>
-            <strong>Overview of our HSMR approach</strong>.
-            A key design choice of HSMR is the adoption of the SKEL parametric body model which is designed using a biomechanically accurate skeletal model.
-            We use a transformer-based architecture that takes as input a single image of a person and estimates the pose q and shape parameters β of the SKEL model.
-            During training, we iteratively update the pseudo ground truth we use to supervise our model, aiming to improve its quality.
-            For this, we optimize the HSMR estimate to align with the ground truth 2D keypoints (SKELify).
-            The optimization output parameters are used in future training iterations as supervision target.
-          </p>
+            <strong>Overview of our PSDiffusion</strong>. Our framework produces multi-layer images through three key components: (1) A transparent VAE encoder preserving alpha channels; (2) Layer cross-attention reweighting for layout plausibility; (3) Partial joint self-attention for inter-layer context modeling.
+          </p><br>
+
+          <div style="display: flex; justify-content: center;">
+            <img src="assets/global-layer-interactive-module_00.png" width="90%" />
+          </div>
+          <p>
+            <strong>Overview of our global-layer interactive mechanism</strong>, composed of layer cross-attention reweighting module and partial joint self-attention module. Layer cross-attention reweighting module extracts the cross-attention map from the global branch to reweight the cross-attention map of the layer branch, guiding the position of foreground layers. Partial joint self-attention module implements a shared attention across global branch and layer branch to facilitate context-aware feature modeling.
+          </p><br>
 
         </div>
       </div>
@@ -240,17 +251,14 @@
       <div class="row">
         <div class="col-12">
 
-          <h3>More Results</h3>
+          <h3>Comparisons</h3>
           <hr style="margin-top: 0px" />
-
-          <center>Camera-View Visualization</center>
-          <div id="ResultsVideosInCam"></div>
-
+          <div style="display: flex; justify-content: center;">
+            <img src="assets/comparison_00.png" width="90%" />
+          </div>
           <br>
-          <hr />
 
-          <center>Side-View Visualization</center>
-          <div id="ResultsVideosSide"></div>
+
 
         </div>
       </div>
@@ -265,11 +273,11 @@
 
         <h3>Citation</h3>
         <hr style="margin-top: 0px" />
-        <pre class="selectable" style="background-color: #e9eeef; padding: 1.5em 1.5em; border-radius: 15px"><code>@inproceedings{xia2025hsmr,
-  title={Reconstructing Humans with a Biomechanically Accurate Skeleton},
-  author={Xia, Yan and Zhou, Xiaowei and Vouga, Etienne and Huang, Qixing and Pavlakos, Georgios},
-  booktitle={CVPR},
-  year={2025},
+        <pre class="selectable" style="background-color: #e9eeef; padding: 1.5em 1.5em; border-radius: 15px"><code>@article{huang2025psdiffusion,
+  title={Psdiffusion: Harmonized multi-layer image generation via layout and appearance alignment},
+  author={Huang, Dingbang and Li, Wenbo and Zhao, Yifei and Pan, Xinyu and Wang, Chun and Zeng, Yanhong and Dai, Bo},
+  journal={arXiv preprint arXiv:2505.11468},
+  year={2025}
 }</code></pre>
         <hr />
       </div>
@@ -283,6 +291,8 @@
     Thanks to the
     <a href="https://zju3dv.github.io/4k4d/">4K4D</a>'s
     ,
+    <a href="https://isshikihugh.github.io/HSMR/">HSMR</a>'s
+    ,
     <a href="https://zju3dv.github.io/gvhmr/">GVHMR</a>'s
     and
     <a href="https://zju3dv.github.io/murre/">MURRE</a>'s
@@ -294,26 +304,26 @@
     // Highlight system name.
     replaceHSMR(document.body);
 
-    // Add videos carousels.
-    const tesaer_videos = [
-      { src: "https://www.cs.utexas.edu/~pavlakos/hsmr/resources/cam0.mp4" },
-      { src: "https://www.cs.utexas.edu/~pavlakos/hsmr/resources/cam1.mp4" },
-      { src: "https://www.cs.utexas.edu/~pavlakos/hsmr/resources/cam3.mp4" },
-      { src: "https://www.cs.utexas.edu/~pavlakos/hsmr/resources/cam4.mp4" },
+    // Add Image carousel for TL;DR
+    const teaser_images = [
+      { src: "assets/7_00.png", alt: "Image 1" },
+      { src: "assets/2_00.png", alt: "Image 2" },
+      { src: "assets/3_00.png", alt: "Image 3" },
+      { src: "assets/4_00.png", alt: "Image 4" },
+      { src: "assets/5_00.png", alt: "Image 5" },
     ];
-    const results_videos_in_cam = [
-      { src: "https://www.cs.utexas.edu/~pavlakos/hsmr/resources/cam5.mp4" },
-      { src: "https://www.cs.utexas.edu/~pavlakos/hsmr/resources/cam9.mp4" },
-      { src: "https://www.cs.utexas.edu/~pavlakos/hsmr/resources/cam11.mp4" },
-      { src: "https://www.cs.utexas.edu/~pavlakos/hsmr/resources/cam13.mp4" },
+    createImageCarousel(teaser_images, 'TeaserImages', { interval: 5000, height: '400px' });
+
+    // Add PDF carousel
+    const pdf_gallery = [
+      { src: "assets/1.pdf" },
+      { src: "assets/2.pdf" },
+      { src: "assets/3.pdf" },
+      { src: "assets/4.pdf" },
+      { src: "assets/5.pdf" },
+      { src: "assets/6.pdf" },
     ];
-    const results_videos_side = [
-      { src: "https://www.cs.utexas.edu/~pavlakos/hsmr/resources/side0.mp4" },
-      { src: "https://www.cs.utexas.edu/~pavlakos/hsmr/resources/side1.mp4" },
-    ];
-    createVideoCarousel(tesaer_videos, 'TeaserVideos', { controls: false, interval: 10000 });
-    createVideoCarousel(results_videos_in_cam, 'ResultsVideosInCam', { controls: false, interval: 5000 });
-    createVideoCarousel(results_videos_side, 'ResultsVideosSide', { controls: false, interval: 5000 });
+    createPDFCarousel(pdf_gallery, 'PDFGallery', { interval: 5000 });
   </script>
 </body>
 
